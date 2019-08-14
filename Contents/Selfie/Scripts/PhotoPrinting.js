@@ -190,7 +190,7 @@ function SelectFrame(num)
     else
     {
         document.getElementById("frame").src = "Images/frame0"+num+".png";
-        frameImagePath = GetCurrentFolderPath() + "Images/photoframe0"+num+".png";
+        frameImagePath = GetCurrentFolderPath() + "Images/frame0"+num+".png";
 
     }    
 }
