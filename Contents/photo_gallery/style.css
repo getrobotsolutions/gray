@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Bukra-Regular;
+    src: url(../../css/Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Bukra-Light;
+    src: url(../../css/Fonts/OpenSans-Light.ttf);
+}
+body{
+//font-family: 'Bukra-Light' !important;
+    /*font-weight: bold;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+//overflow: hidden;
+}
+.home{
+    float: left;
+    height: 57px;
+    padding-right: 30px;
+
+}
+
+
+figure { overflow: hidden;
+    -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; -webkit-margin-end: 0;
+}
+h1, figcaption, footer { font-size: 180%; text-shadow: 2px 2px 5px black;}
+figcaption { font-size: 120%; }
+footer { font-size: 80%; }
+#big { max-height: 60vh;  box-shadow: -2px 4px 8px 0 black, 4px 6px 8px 0 black; }
+.row-fluid { white-space: nowrap; }
+.row-fluid .col-2 { display: inline-block; width: 200px}
+.img-thumbnail { padding: .05rem; }
+.ui-selected { border: 2px solid #F39814; }
+.animateFigcaption {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: cssAnimation;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    from { -webkit-transform: rotate(-360deg) scale(2); }
+    to { -webkit-transform: rotate(0deg) scale(1); }
+
+    from { -moz-transform: rotate(-360deg) scale(2); }
+    to { -moz-transform: rotate(0deg) scale(1); }
+}
