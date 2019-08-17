@@ -55,3 +55,24 @@ function OnJoystickControlled(strPara){
         FC_ContentsCall('Home');
     }
 }
+
+function ShowImgPopup(src){
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    // calculate the values for center alignment
+    var dialogTop =  '30px';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="900" height="1710" src="'+src+'"/></div></div>';
+}
+
+$(document).ready(function(){
+
+    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
+        $('#dialog-overlay, #dialog-box').hide();
+        return false;
+    });
+});

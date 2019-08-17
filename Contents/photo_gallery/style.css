@@ -29,7 +29,7 @@ figure { overflow: hidden;
 h1, figcaption, footer { font-size: 180%; text-shadow: 2px 2px 5px black;}
 figcaption { font-size: 120%; }
 footer { font-size: 80%; }
-#big { max-height: 60vh;  box-shadow: -2px 4px 8px 0 black, 4px 6px 8px 0 black; }
+#big { max-height: 60vh; max-width: 1080px;  box-shadow: -2px 4px 8px 0 black, 4px 6px 8px 0 black; }
 .row-fluid { white-space: nowrap; }
 .row-fluid .col-2 { display: inline-block; width: 200px}
 .img-thumbnail { padding: .05rem; }

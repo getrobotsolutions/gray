@@ -10,6 +10,7 @@
     <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
     <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="maincontents.js" type="application/javascript"></script>
+    <link href="css/Main.css" rel="stylesheet" >
     <style>
         body{
             background-image: url(assets/2.png);
@@ -29,14 +30,16 @@
     <input type="button" style="float: left; width: 200px; height: 100px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'maincontents.htm'">
     <input type="button" style="float: right; width: 200px; height: 100px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'tux.html'">
     <br>
-    <input type="button" style="margin: 340px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="alert('test');">
+    <input type="button" style="margin: 340px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="ShowImgPopup('assets/lyrics/1.png')">
     <br>
-    <input type="button" style="margin: 130px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'Contents/Selfie/index.html'">
+    <input type="button" style="margin: 130px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="ShowImgPopup('assets/lyrics/2.png')">
     <br>
-    <input type="button" style="margin: 120px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'Contents/RobotAvatar/index.htm'">
+    <input type="button" style="margin: 120px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="ShowImgPopup('assets/lyrics/3.png')">
     <br>
-    <input type="button" style="margin: 120px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'Contents/RobotAvatar/index.htm'">
+    <input type="button" style="margin: 120px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="ShowImgPopup('assets/lyrics/4.png')">
 
 </div>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
 </body>
 </html>

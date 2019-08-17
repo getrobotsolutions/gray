@@ -216,14 +216,15 @@ a.button {
 
 #dialog-box .dialog-content {
 	/* style the content */
-	max-height: 1200px;
+	//max-height: 1200px;
 	overflow: hidden;
 	text-align:left;
-	padding:10px;
+	padding:5px;
 	margin:13px;
 	color:#666;
 	font-family:arial;
 	font-size:11px;
+	text-align: center;
 }
 
 #dialog-overlay {
@@ -260,12 +261,13 @@ a.button {
 
 	background:#eee;
 	/* styling of the dialog box, i have a fixed dimension for this demo */
-	width:850px;
+	width:1000px;
+	height: 1800px;
 
 
 	/* make sure it has the highest z-index */
 	position:absolute;
-	top: 20% !important;
+	top: 3% !important;
 	z-index:5000;
 
 	/* hide it by default */
