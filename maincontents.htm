@@ -23,5 +23,29 @@
     <br>
     <input type="button" style="margin: 120px 0 0 0; width: 900px; height: 200px; color: transparent; background-color: transparent; border: none;" onclick="location.href = 'Contents/RobotAvatar/index.htm'">
 </div>
+
+<script>
+    function OnJoystickControlled(strPara){
+        var btn_info = strPara.split(',')[4];
+
+
+        if(btn_info[0] == '1'){
+            PlaySpeech("Hi, welcome to the Enverid booth!");
+        }
+
+        if(btn_info[1] == '1'){
+            PlaySpeech("Hi! my name is Francesca, I am here to help. ");
+        }
+
+        if(btn_info[2] == '1'){
+            PlaySpeech("Take a selfie with me.");
+        }
+
+        if(btn_info[3] == '1'){
+            PlaySpeech("Bye, bye.");
+        }
+
+    }
+</script>
 </body>
 </html>
